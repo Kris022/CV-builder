@@ -1,0 +1,15 @@
+.a4-page {
+  border: 1px solid lightgray;
+  padding: 24px;
+  width: 560px;
+}
+
+.personal-info {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-info {
+  display: flex;
+  gap: 10px;
+}

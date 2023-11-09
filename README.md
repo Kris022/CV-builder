@@ -1,3 +1,3 @@
 # CV/Resume builder tool
 
-Live demo soon...
+## [👉Live DEMO](https://elegant-torrone-2b819d.netlify.app/)

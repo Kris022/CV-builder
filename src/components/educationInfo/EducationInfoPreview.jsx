@@ -17,7 +17,7 @@ const EducationInfoPreview = ({ educationEntry, onEdit, onRemove }) => {
       </div>
       <div>
         <button onClick={handleEdit}>Edit</button>
-        <button onClick={handleRemove}>Delete</button>
+        <button className='delete-btn' onClick={handleRemove}>Delete</button>
       </div>
     </div>
   );

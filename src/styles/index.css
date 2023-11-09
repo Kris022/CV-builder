@@ -2,6 +2,10 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
@@ -9,4 +13,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  --bg: #ffffff;
+  --text-main: #0d0d0d;
+  --text-white: white;
+
+  --button: #eeeeee;
+  --darker-button: #dfdfdf;
+  --darkest-button: #0d0d0d;
+  --button-border: #dadada;
+
+  --orange: #f9a966;
+  --orange-border: #fda372;
+
+  --resume-section-bg: #f3f3f3;
+  --resume-page-bg: #ffffff;
+
+  --delete-btn-bg: #f96666;
+  --delete-btn-hover: #ff4a4a;
 }

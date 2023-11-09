@@ -80,7 +80,7 @@ function App() {
 
   return (
     <div className="a4-page">
-      <div className="personal-info">
+      <div className="personal-info section">
         {editPersonalInfo ? (
           <PersonalInfoInput
             personalInfo={personalInfo}
@@ -95,7 +95,7 @@ function App() {
         )}
       </div>
 
-      <div className="education-info">
+      <div className="education-info section">
         <h2>Education</h2>
         {educationInfoEntries.map((entry, index) => (
           <EducationInfoPreview
@@ -121,7 +121,7 @@ function App() {
         </button>
       </div>
 
-      <div className="work-info">
+      <div className="work-info section">
         <h2>Work Experience</h2>
         {workInfoEntries.map((entry, index) => (
           <WorkInfoPreview

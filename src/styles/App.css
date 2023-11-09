@@ -1,15 +1,78 @@
 .a4-page {
   border: 1px solid lightgray;
   padding: 24px;
-  width: 560px;
+  width: 900px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.personal-info {
+.section {
+  border-radius: 10px;
+  padding: 15px 10px;
+  transition: 0.1s;
+}
+
+.section input[type="text"] {
+  font-size: 11pt;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid var(--button-border);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.section:hover {
+  background-color: var(--resume-section-bg);
+}
+
+.form-section {
   display: flex;
   gap: 10px;
 }
 
-.contact-info {
+button {
+  padding: 5px 15px;
+  border-radius: 13px;
+  font-weight: bolder;
+  border: 1px solid var(--darker-button);
+  font-size: 11pt;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--darker-button);
+}
+
+button[type="submit"] {
+  background-color: var(--orange);
+  border-color: var(--orange-border);
+}
+
+.delete-btn {
+  /* background-color: -89var(--delete-btn-bg); */
+}
+
+.delete-btn:hover {
+  background-color: var(--delete-btn-hover);
+}
+
+.personal-info.preview {
   display: flex;
   gap: 10px;
+  border-bottom: 2px solid var(--button-border);
+  font-size: 2rem;
+  /* font-weight: bold; */
+}
+
+.contact-info.preview {
+  display: flex;
+  gap: 12px;
+  font-size: 1.1rem;
+  margin-block: 10px;
+}
+
+p {
+  margin: 0;
 }

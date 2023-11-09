@@ -11,7 +11,7 @@ const PersonalInfoInput = ({ personalInfo, setPersonalInfo, onSubmit }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="personal-info">
+      <div className="form-section">
         <input
           type="text"
           placeholder="Forename"
@@ -27,19 +27,12 @@ const PersonalInfoInput = ({ personalInfo, setPersonalInfo, onSubmit }) => {
           onChange={handlePersonalInfoChange}
         />
       </div>
-      <div className="contact-info">
+      <div className="form-section">
         <input
           type="text"
           placeholder="Phone number"
           name="phone"
           value={personalInfo.phone}
-          onChange={handlePersonalInfoChange}
-        />
-        <input
-          type="text"
-          placeholder="Location"
-          name="location"
-          value={personalInfo.location}
           onChange={handlePersonalInfoChange}
         />
         <input
@@ -50,8 +43,19 @@ const PersonalInfoInput = ({ personalInfo, setPersonalInfo, onSubmit }) => {
           onChange={handlePersonalInfoChange}
         />
       </div>
-      <button type="button">Clear</button>
-      <button type="submit">Save</button>
+
+      <input
+        type="text"
+        placeholder="Location"
+        name="location"
+        value={personalInfo.location}
+        onChange={handlePersonalInfoChange}
+      />
+
+      <div>
+        <button type="button">Clear</button>
+        <button type="submit">Save</button>
+      </div>
     </form>
   );
 };
